@@ -22,11 +22,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src = 'https://user-images.githubusercontent.com/91217813/192165516-3c3846d3-90e2-454b-bc9e-3489a461dc1a.gif'
+ width='450' height='750' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with [Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 
 ## Notes
