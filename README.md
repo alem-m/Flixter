@@ -22,8 +22,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src = 'https://user-images.githubusercontent.com/91217813/192165516-3c3846d3-90e2-454b-bc9e-3489a461dc1a.gif'
- width='450' height='750' />
+<img src = 'https://user-images.githubusercontent.com/91217813/192397448-6917b4d5-90ab-4360-9527-740e33afb75b.gif'
+ width='350' height='750' />
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
