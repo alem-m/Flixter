@@ -1,35 +1,51 @@
-# Android Project 3 - Flixter
+# Android Project 4 - FlixterPlus
 
-Submitted by: Alem Matiwos Fufa
+Submitted by: Alem Matiwos F
 
-Flixter is a movie browsing app that allows users to browse movies currently playing in theaters.
+FlixterPlus is a movie browsing app that allows users to browse ... [TODO]
 
-Time spent: 15+ hours spent in total
+Time spent: **X** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [x] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [x] **Use Glide to load and display movie poster images**
+- [ ] **Choose any endpoint on The MovieDB API except `now_playing`**
+ - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
+- [] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [ ] **Use Glide to load and display at least one image per entry**
+- [ ] **Click on an entry to view specific details about that entry using Intents**
 
 The following **optional** features are implemented:
 
-- [x] Improve and customize the user interface through styling and coloring
+- [ ] **Add another API call and RecyclerView that lets the user interact with different data.**
+- [ ] **Add rounded corners to the images using the Glide transformations**
+- [ ] **Implement a shared element transition when user clicks into the details of a movie**
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src = 'https://user-images.githubusercontent.com/91217813/192397448-6917b4d5-90ab-4360-9527-740e33afb75b.gif'
- width='350' height='750' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2022] [alem-m]
+    Copyright [2021] [alem-m]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
