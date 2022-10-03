@@ -1,21 +1,44 @@
 package com.example.flixter
 
-import com.google.gson.annotations.SerializedName
+import android.support.annotation.Keep
+import kotlinx.serialization.Contextual
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-class LatestMovie {
-    @SerializedName("poster_path")
-    var poster_path: String? = null
+@Keep
+@Serializable
+data class SearchAPIResponse(
+    @SerialName("genre")
+    val genre: List<Genre>?,
+) : java.io.Serializable
 
-    @SerializedName("original_title")
-    var original_title: String? = null
+@Keep
+@Serializable
+data class Genre(
+    @SerialName("name")
+    val genre_name : String
+) : java.io.Serializable
 
-    @SerializedName("overview")
-    var overview: String? = null
+class LatestMovie(
+    @SerialName("original_title")
+    var original_title: String?,
+    @SerialName("overview")
+    var overview: String?,
+    @SerialName("genre")
+    var genre: Genre?,
+    @SerialName("popularity")
+    var popularity: String?,
+    @SerialName("poster_path")
+    var poster_path: PosterPath?,
+    ) : java.io.Serializable{
+    val movie_image_url = "https://image.tmdb.org/t/p/w500/$poster_path"
 
-//    @SerializedName("title")
-//    var title: String? = null
-
-    @SerializedName("backdrop_path")
-    var backdrop_path: String? = null
 }
+
+@Keep
+@Serializable
+data class PosterPath(
+    @SerialName("poster_path")
+    val poster_path : String?
+) : java.io.Serializable
 

@@ -15,8 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Flixter"
         tools:targetApi="31">
+        <activity android:name=".DetailActivity"
+            android:exported="true" />
         <activity
-            android:name="com.example.flixter.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
