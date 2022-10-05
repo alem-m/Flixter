@@ -11,21 +11,15 @@ Time spent: 10+ hours spent in total
 The following **required** functionality is completed:
 
 - [x] **Choose any endpoint on The MovieDB API except `now_playing`**
- - Chosen Endpoint: `Latest Movie`
-- [ ] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
-- [ ] **Use Glide to load and display at least one image per entry**
-- [ ] **Click on an entry to view specific details about that entry using Intents**
-
-The following **optional** features are implemented:
-
-- [ ] **Add another API call and RecyclerView that lets the user interact with different data.**
-- [ ] **Add rounded corners to the images using the Glide transformations**
-- [ ] **Implement a shared element transition when user clicks into the details of a movie**
+ - Chosen Endpoint: `Popular Movie`
+- [x] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [x] **Use Glide to load and display at least one image per entry**
+- [x] **Click on an entry to view specific details about that entry using Intents**
 
 
 ## Debugging Video Walkthrough
 
-Here's a walkthrough of debugging screenshot:
+Here's a walkthrough screenshot:
 
 <img src='https://user-images.githubusercontent.com/91217813/193571582-6eb5616b-732d-43aa-a66c-2520fc6615c6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -33,7 +27,7 @@ GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
-App needs to be investigated further and debugged for it to perform smoothly. Will continue to work on it!
+App now works smoothly. Will continue to work on showing posters!
 
 ## License
 
