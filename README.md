@@ -28,7 +28,7 @@ GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
-App now works smoothly. Will continue to work on showing posters!
+App fully works and runs smoothly, now!
 
 ## License
 
