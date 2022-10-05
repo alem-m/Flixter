@@ -21,8 +21,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough screenshot:
 
-
-<img src='https://user-images.githubusercontent.com/91217813/193965750-d2eb18fc-de26-4159-a56a-a114c02d9964.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://user-images.githubusercontent.com/91217813/193971166-4e2f202e-688e-474d-9012-13203d6c104e.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
