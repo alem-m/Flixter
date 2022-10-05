@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.flixter.R.id
 
 const val MOVIE_EXTRA = "MOVIE_EXTRA"
 private const val TAG = "LatestMovieAdapter"
@@ -21,8 +20,7 @@ class LatestMovieAdapter (
     : RecyclerView.Adapter<LatestMovieAdapter.ViewHolder>()
     {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_latest_movie, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_latest_movie, parent, false)
             return ViewHolder(view)
         }
 
@@ -35,10 +33,9 @@ class LatestMovieAdapter (
 
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
-            private val mMovieTitle = itemView.findViewById<TextView>(R.id.movie_title)
             private val mMovieImage = itemView.findViewById<ImageView>(R.id.movie_image)
+            private val mMovieTitle = itemView.findViewById<TextView>(R.id.movie_title)
             private val mMovieDesc = itemView.findViewById<TextView>(R.id.movie_description)
-            private val mMovieGenre = itemView.findViewById<TextView>(R.id.movie_genre)
             private val mMoviePopularity = itemView.findViewById<TextView>(R.id.movie_popularity)
 
             init {
@@ -46,7 +43,7 @@ class LatestMovieAdapter (
             }
 
             fun bind(movie: LatestMovie){
-                mMovieTitle.text = movie.original_title
+                mMovieTitle.text = movie.title
                 mMovieDesc.text = movie.overview
 
                 Glide.with(context)

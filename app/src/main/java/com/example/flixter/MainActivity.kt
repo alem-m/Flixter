@@ -1,8 +1,8 @@
 package com.example.flixter
 
+
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.flixter.databinding.ActivityMainBinding
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import kotlinx.serialization.json.Json
 import okhttp3.Headers
 import org.json.JSONException
@@ -22,8 +24,9 @@ fun createJson() = Json {
 
 
 private const val TAG = "MainActivity/"
+private const val SEARCH_API_KEY = BuildConfig.API_KEY
 private const val LATEST_MOVIE_URL =
-    "https://api.themoviedb.org/3/movie/latest?api-key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+    "https://api.themoviedb.org/3/movie/popular?api_key=${SEARCH_API_KEY}"
 
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<LatestMovie>()
@@ -63,15 +66,21 @@ class MainActivity : AppCompatActivity() {
                 try {
                     // TODO: Create the parsedJSON
                     // TODO: AND Do something with the returned json (contains article information)
-                    val parsedJson = createJson().decodeFromString(
-                        SearchAPIResponse.serializer(),
-                        json.jsonObject.toString()
-                    )
+//                    val parsedJson = createJson().decodeFromString(
+//                        Result.serializer(),
+//                        json.jsonObject.toString()
+//                    )
                     // TODO: Save the articles and reload the screen
-                    parsedJson.genre?.let { list ->
-                        movies.addAll(movies)
-                        movieAdapter.notifyDataSetChanged()
-                    }
+//                    parsedJson.results {
+//                        movies.addAll(movies)
+//                        movieAdapter.notifyDataSetChanged()
+//                    }
+                    val resultsJSON = json.jsonObject.get("results").toString()
+                    val gson = Gson()
+                    val arrayMovieType = object : TypeToken<List<LatestMovie>>() {}.type
+
+                    val models : List<LatestMovie> = gson.fromJson(resultsJSON, arrayMovieType)
+                    moviesRecyclerView.adapter = LatestMovieAdapter(this@MainActivity, models)
                 } catch (e: JSONException) {
                     Log.e(TAG, "Exception: $e")
                 }
