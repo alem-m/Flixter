@@ -23,7 +23,7 @@ data class LatestMovie(
     @SerialName("poster_path")
     val poster_path: String?,
     ) : java.io.Serializable{
-    val movie_image_url = "https://image.tmdb.org/t/p/w500/${PosterPath}"
+    val movieImageUrl = "https://image.tmdb.org/t/p/w500/${PosterPath}"
 
 }
 

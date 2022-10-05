@@ -47,7 +47,7 @@ class LatestMovieAdapter (
                 mMovieDesc.text = movie.overview
 
                 Glide.with(context)
-                    .load(movie.movie_image_url)
+                    .load(movie.movieImageUrl)
                     .into(mMovieImage)
             }
 
