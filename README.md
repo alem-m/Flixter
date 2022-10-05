@@ -2,17 +2,17 @@
 
 Submitted by: Alem Matiwos F
 
-FlixterPlus is a movie browsing app that allows users to browse ... [TODO]
+FlixterPlus is a movie browsing app that allows users to browse latest movies, and their descriptions
 
-Time spent: **X** hours spent in total
+Time spent: 10+ hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **Choose any endpoint on The MovieDB API except `now_playing`**
- - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
-- [] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [x] **Choose any endpoint on The MovieDB API except `now_playing`**
+ - Chosen Endpoint: `Latest Movie`
+- [ ] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
 - [ ] **Use Glide to load and display at least one image per entry**
 - [ ] **Click on an entry to view specific details about that entry using Intents**
 
@@ -22,26 +22,18 @@ The following **optional** features are implemented:
 - [ ] **Add rounded corners to the images using the Glide transformations**
 - [ ] **Implement a shared element transition when user clicks into the details of a movie**
 
-The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+## Debugging Video Walkthrough
 
-## Video Walkthrough
+Here's a walkthrough of debugging screenshot:
 
-Here's a walkthrough of implemented user stories:
+<img src='https://user-images.githubusercontent.com/91217813/193571582-6eb5616b-732d-43aa-a66c-2520fc6615c6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+App needs to be investigated further and debugged for it to perform smoothly. Will continue to work on it!
 
 ## License
 
