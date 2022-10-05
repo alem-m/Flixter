@@ -17,7 +17,7 @@ The following **required** functionality is completed:
 - [x] **Click on an entry to view specific details about that entry using Intents**
 
 
-## Debugging Video Walkthrough
+## Video Walkthrough
 
 Here's a walkthrough screenshot:
 
